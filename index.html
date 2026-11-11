@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Misión SISE · EA1 · Llave 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sise:#ff0e49;
+  --dark:#241f21;
+  --soft:#fff1f5;
+  --gray:#f6f4f5;
+  --line:#e9e2e5;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#eee9eb;color:var(--dark);font:16px Barlow,Arial,sans-serif}
+.wrap{max-width:1100px;margin:24px auto;background:#fff;min-height:650px;overflow:hidden;border-radius:18px;box-shadow:0 12px 35px #241f2115}
+.top{background:var(--dark);color:#fff;padding:16px 34px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font:800 31px 'Barlow Condensed',sans-serif;color:var(--sise);letter-spacing:.5px}
+.top small{letter-spacing:2px;font-weight:700;font-size:12px}
+.screen{display:none;padding:42px 6%;animation:fade .3s ease}.screen.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.tag{font-weight:800;color:var(--sise);text-transform:uppercase;letter-spacing:1.8px;font-size:13px}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;line-height:1.04}
+h1{font-size:clamp(46px,6.5vw,78px);margin:14px 0 16px}
+h2{font-size:clamp(34px,5vw,48px);margin:12px 0 18px}h3{font-size:25px;margin:0 0 10px}
+.lead{font-size:19px;line-height:1.52;max-width:720px}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:center;min-height:455px}
+.keybox{background:var(--soft);border-radius:28px;padding:34px 20px;text-align:center;border:1px solid #ffd5e1}
+.keyicon{font-size:110px;line-height:1;transform:rotate(-18deg);filter:drop-shadow(0 10px 10px #ff0e4930);margin-bottom:14px}
+.pill{display:inline-block;background:var(--dark);color:#fff;border-radius:6px;padding:8px 15px;font-size:13px;font-weight:700;letter-spacing:1px}
+.accent{color:var(--sise)}
+.notice{background:var(--soft);border-left:5px solid var(--sise);padding:16px 18px;border-radius:0 9px 9px 0;line-height:1.5;margin-top:20px}
+button{border:0;background:var(--sise);color:white;font:700 18px 'Barlow Condensed',sans-serif;padding:14px 28px;border-radius:8px;cursor:pointer}button:hover{filter:brightness(.94)}button.secondary{background:var(--dark)}
+.action{display:flex;gap:12px;align-items:center;margin-top:26px;flex-wrap:wrap}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--gray);padding:22px;border-radius:12px}.panel p{line-height:1.55;margin:0}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:10px}.step{border:1px solid var(--line);border-radius:10px;padding:13px 14px;line-height:1.42;background:#fff}.step b{color:var(--sise)}
+.deliver{background:var(--dark);color:#fff;padding:22px;border-radius:12px}.deliver ul{margin:9px 0 0;padding-left:20px;line-height:1.62}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 4px}.badge{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:13px;font-weight:700}.badge strong{color:var(--sise)}
+.footer{border-top:1px solid #eee;padding:14px 34px;display:flex;justify-content:space-between;font-size:13px;color:#777}
+.screen2{padding-top:29px}.screen2 .lead{font-size:16px;max-width:none}.screen2 h2{font-size:40px}.screen2 h3{font-size:23px}
+@media(max-width:720px){.wrap{margin:0;border-radius:0}.top{padding:14px 20px}.screen{padding:27px 20px}.hero,.grid2,.steps{grid-template-columns:1fr}.hero{gap:18px}.keybox{padding:20px}.keyicon{font-size:78px}.screen2 h2{font-size:34px}.footer{padding:14px 20px;gap:12px}.footer span:last-child{text-align:right}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="top">
+  <div class="logo">SISE»</div>
+  <small>MISIÓN SISE</small>
+</header>
+
+<section class="screen active" id="s1">
+  <div class="hero">
+    <div>
+      <div class="tag">Sesión 3 · Evaluación Aplicativa 1</div>
+      <h1>PREPÁRATE PARA OBTENER TU <span class="accent">PRIMERA LLAVE</span></h1>
+      <span class="pill">LLAVE 01 · COMUNICACIÓN EFECTIVA</span>
+      <p class="lead">Tu forma de comunicarte puede abrir oportunidades, fortalecer relaciones y ayudarte a resolver conflictos. En esta primera llave analizarás cómo te comunicas hoy y qué puedes mejorar para potenciar tu empleabilidad.</p>
+      <div class="notice">
+        <strong>Para obtener esta llave, debes aprobar la siguiente evaluación:</strong><br>
+        <b>EA1 – Análisis FODA laboral</b>
+      </div>
+      <div class="meta">
+        <span class="badge"><strong>EA1</strong> · Evaluación Aplicativa 1</span>
+        <span class="badge"><strong>20 %</strong> de la nota final</span>
+      </div>
+      <div class="action"><button onclick="go(2)">CONOCE TU EVALUACIÓN »</button></div>
+    </div>
+    <div class="keybox">
+      <div class="keyicon" aria-hidden="true">🗝️</div>
+      <h3>LLAVE 1</h3>
+      <div class="tag">COMUNICACIÓN EFECTIVA</div>
+      <p>Reconoce cómo te comunicas, identifica tus fortalezas y define acciones concretas para prevenir conflictos y mejorar tu desempeño profesional.</p>
+    </div>
+  </div>
+</section>
+
+<section class="screen screen2" id="s2">
+  <div class="tag">EA1 · Llave 01 · Comunicación Efectiva</div>
+  <h2>Análisis FODA laboral</h2>
+  <div class="meta">
+    <span class="badge"><strong>Sesión:</strong> 3</span>
+    <span class="badge"><strong>Peso:</strong> 20 %</span>
+  </div>
+
+  <div class="notice">
+    <strong>Tu desafío</strong><br>
+    Analiza una situación real o cercana en la que la comunicación haya favorecido o dificultado tu relación con otras personas. A partir de ella, elabora un FODA laboral vinculado con tu forma de comunicarte y afrontar conflictos, y plantea tres acciones concretas que puedas aplicar para fortalecer tu empleabilidad.
+  </div>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="panel">
+      <h3>¿Qué aprenderás?</h3>
+      <p>Reconocerás cómo tu forma de comunicarte influye en tu desempeño y empleabilidad. También analizarás tus fortalezas y aspectos por mejorar mediante un FODA laboral, y propondrás acciones comunicativas concretas para prevenir conflictos y mejorar tus relaciones profesionales.</p>
+    </div>
+    <div class="panel">
+      <h3>¿Cómo lo harás?</h3>
+      <div class="steps">
+        <div class="step"><b>01.</b> Recupera lo trabajado sobre comunicación efectiva, escucha activa, asertividad, conflicto laboral y empleabilidad.</div>
+        <div class="step"><b>02.</b> Selecciona una situación real o cercana con una dificultad, barrera o quiebre de comunicación.</div>
+        <div class="step"><b>03.</b> Describe qué ocurrió, quiénes participaron, cómo te comunicaste, qué dificultad apareció y qué consecuencia generó.</div>
+        <div class="step"><b>04.</b> Elabora tu FODA laboral considerando fortalezas, oportunidades, debilidades y amenazas.</div>
+        <div class="step"><b>05.</b> Relaciona tu FODA con la situación analizada y explica qué elementos estuvieron presentes.</div>
+        <div class="step"><b>06.</b> Formula tres acciones comunicativas concretas vinculadas con escucha activa, asertividad, comunicación verbal/no verbal o manejo de desacuerdos.</div>
+        <div class="step"><b>07.</b> Revisa que exista coherencia entre la situación, el FODA y las tres acciones propuestas.</div>
+        <div class="step"><b>08.</b> Presenta tu análisis de manera clara y ordenada como parte de tu portafolio de empleabilidad.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="deliver">
+      <h3>Producto a presentar</h3>
+      <ul>
+        <li>Descripción breve de una situación comunicativa real o cercana.</li>
+        <li>FODA laboral orientado a la empleabilidad.</li>
+        <li>Breve explicación de los elementos identificados.</li>
+        <li>Tres acciones comunicativas concretas para prevenir conflictos y mejorar el perfil profesional.</li>
+        <li>Reflexión breve sobre qué aspecto de tu comunicación necesitas fortalecer.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Uso responsable de IA</h3>
+      <p>La IA puede ayudarte a ordenar o revisar la redacción de tus ideas, pero el FODA, la situación elegida y las acciones de mejora deben responder a tu propia realidad y experiencia.</p>
+      <div class="notice" style="margin-top:14px">
+        <strong>Recuerda</strong><br>
+        Esta evaluación valora tu capacidad de analizar tu propio desempeño comunicativo y convertir ese diagnóstico en acciones concretas de mejora.
+      </div>
+      <p style="margin-top:14px"><strong>¿Qué sigue?</strong><br>Al aprobar la EA1, habrás completado tu primera llave de Misión SISE y podrás continuar avanzando en la ruta del curso.</p>
+    </div>
+  </div>
+
+  <div class="action">
+    <button class="secondary" onclick="go(1)">« VOLVER AL INICIO</button>
+    <a href="https://da-ite.github.io/Misi-n-SISE_T.COMUNI/" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+      <button type="button">INGRESA TU LLAVE »</button>
+    </a>
+    <span style="font-size:13px;color:#777">La entrega y calificación se realizan en la actividad correspondiente de Canvas.</span>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>Instituto SISE – Grupo EducaD</span>
+  <span id="counter">PANTALLA 1 DE 2</span>
+</footer>
+</main>
+
+<script>
+function go(n){
+  document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));
+  document.getElementById('s'+n).classList.add('active');
+  document.getElementById('counter').textContent='PANTALLA '+n+' DE 2';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
